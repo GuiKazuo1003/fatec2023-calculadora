@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Aula do glauco 28/02 - Calculadora</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Calculadora Básica</h1>
+    <form> <!-- Formularios são submetidos quando clicado a pagina é recarregada-->
+        <input type="text" id="num1"> <!--CPFzinho-->
+        +
+        <input type="text" id="num2">
+        <button type="button" type onclick="somar()">Somar</button> <!-- Elementos do HTML possui um valor comum-->
+        =
+        <input type="text" id="resp" readonly> <!-- Readonly == fazer com que não possa digitar-->
+    </form>
+    <script>
+        function somar(){
+            //alert("Não há ferrolhos");
+            var num1, num2, resp; //não é obrigado a declarar variaveis
+
+            num1 = parseFloat(document.getElementById("num1").value);
+            num2 = parseFloat(document.getElementById("num2").value);
+
+            resp = num1 + num2;
+
+            document.getElementById("resp").value = resp;
+        }
+    </script>
+
+
+</body>
+</html>
