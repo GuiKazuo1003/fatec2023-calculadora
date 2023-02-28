@@ -1,7 +1,20 @@
 h1{
-    color: blue;
+    color: rgb(171, 241, 78);
+    text-align: center;
+    background-color: cadetblue;
 }
 
 button{
     color: red;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+body{
+    text-align: center;
+
+}
+div{
+    border-left-color: blue;
+    height: 100%;
 }

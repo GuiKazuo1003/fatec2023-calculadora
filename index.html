@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/js" href="java.css">
     <title>Aula do glauco 28/02 - Calculadora</title>
     <style>
         body{
@@ -17,21 +18,61 @@
     <h1>Calculadora Básica</h1>
     <form> <!-- Formularios são submetidos quando clicado a pagina é recarregada-->
         <input type="text" id="num1"> <!--CPFzinho-->
-        +
-        <input type="text" id="num2">
-        <button type="button" type onclick="somar()">Somar</button> <!-- Elementos do HTML possui um valor comum-->
-        =
-        <input type="text" id="resp" readonly> <!-- Readonly == fazer com que não possa digitar-->
-    </form>
+        <br>
+        <input type="text" id="num2"><!-- Elementos do HTML possui um valor comum-->
+        <br>
+        <label> = </label>
+    
+    <div>
+        <button type="button" id="somar" type onclick="somar()">+</button>
+        <button type="button" id="subtrair" type onclick="subtrair()">-</button>
+    </div>
+    <div>
+        <button type="button" id="dividir" type onclick="dividir()">/</button>
+        <button type="button" id="Multiplicar" type onclick="multiplicar()">*</button> 
+    </div>
+    <input type="text" id="resp" readonly> <!-- Readonly == fazer com que não possa digitar-->
+    
+</form>
     <script>
         function somar(){
-            //alert("Não há ferrolhos");
             var num1, num2, resp; //não é obrigado a declarar variaveis
 
             num1 = parseFloat(document.getElementById("num1").value);
             num2 = parseFloat(document.getElementById("num2").value);
 
             resp = num1 + num2;
+
+            document.getElementById("resp").value = resp;
+        }
+        function subtrair(){
+            var num1, num2, resp; //não é obrigado a declarar variaveis
+
+            num1 = parseFloat(document.getElementById("num1").value);
+            num2 = parseFloat(document.getElementById("num2").value);
+
+            resp = num1 - num2;
+
+            document.getElementById("resp").value = resp;
+        }
+        function dividir(){
+            var num1, num2, resp; //não é obrigado a declarar variaveis
+
+            num1 = parseFloat(document.getElementById("num1").value);
+            num2 = parseFloat(document.getElementById("num2").value);
+
+            resp = num1 / num2;
+
+            document.getElementById("resp").value = resp;
+        }
+        function multiplicar(){
+
+            var num1, num2, resp; //não é obrigado a declarar variaveis
+
+            num1 = parseFloat(document.getElementById("num1").value);
+            num2 = parseFloat(document.getElementById("num2").value);
+
+            resp = num1 * num2;
 
             document.getElementById("resp").value = resp;
         }
