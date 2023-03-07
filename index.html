@@ -14,13 +14,13 @@
     </style>
 </head>
 <body>
-    
-    <h1>Calculadora Básica</h1><!--Formularios são submetidos quando clicado a pagina é recarregada-->
+    <div class="box">
+        <h1>Calculadora Básica</h1><!--Formularios são submetidos quando clicado a pagina é recarregada-->
         <input type="text" id="num1"> <!--CPFzinho-->
         <br>
         <input type="text" id="num2"><!-- Elementos do HTML possui um valor comum-->
         <br>
-        <label> = </label>
+        <label style="color:whitesmoke"> = </label>
         <div>
             <button type="button" id="somar" type onclick="somar()">+</button>
             <button type="button" id="subtrair" type onclick="subtrair()">-</button>
@@ -28,9 +28,16 @@
             <button type="button" id="Multiplicar" type onclick="multiplicar()">*</button> 
             <button type="button" id="porcentagem" type onclick="porcentagem()">%</button> 
             <button type="button" id="limpar" type onclick="limpar()">C</button> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <label style="color:rgb(255, 94, 0) ;">Resultado:</label>   
+            <input type="text" id="resp" readonly> <!-- Readonly == fazer com que não possa digitar-->
         </div>
+    </div>
        
-    <input type="text" id="resp" readonly> <!-- Readonly == fazer com que não possa digitar-->
+    
 
 </body>
 </html>

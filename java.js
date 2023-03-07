@@ -39,10 +39,10 @@ function porcentagem(){//não é obrigado a declarar variaveis
     num1 = parseFloat(document.getElementById("num1").value);
     num2 = parseFloat(document.getElementById("num2").value);
 
+    //Realizando os calculos
+    resp = num1 * num2 /100;
+
     document.getElementById("resp").value = resp;
-
-
-        this.value = `${parseFloat(this.value / resp) * 100}`;
 
 }
 function limpar(){//não é obrigado a declarar variaveis
@@ -51,3 +51,4 @@ function limpar(){//não é obrigado a declarar variaveis
     document.getElementById("num2").value = '';
     document.getElementById("resp").value = '';
 }
+ 

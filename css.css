@@ -9,16 +9,32 @@ button{
     text-align: center;
     height: 10%;
     width: 40px;
+    border: 0;
+    border-radius: 5px;
 }
 body{
     text-align: center;
-
+    background-color: rgb(168, 163, 163);
 }
 div{
-    border-left-color: blue;
     height: 100%;
+    margin: 2%;
 }
 input{
     width: 100px;
     padding: 5px;
+    margin: 1%;
+}
+.box{
+    padding: 1%;
+    background-color: #163b1e;
+    margin-top: auto;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
