@@ -5,79 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" type="text/js" href="java.css">
+    <script src="java.js"> </script>
     <title>Aula do glauco 28/02 - Calculadora</title>
     <style>
         body{
-            background-color: beige;
+            background-color: rgb(216, 205, 214);
         }
     </style>
 </head>
 <body>
     
-    <h1>Calculadora Básica</h1>
-    <form> <!-- Formularios são submetidos quando clicado a pagina é recarregada-->
+    <h1>Calculadora Básica</h1><!--Formularios são submetidos quando clicado a pagina é recarregada-->
         <input type="text" id="num1"> <!--CPFzinho-->
         <br>
         <input type="text" id="num2"><!-- Elementos do HTML possui um valor comum-->
         <br>
         <label> = </label>
-    
-    <div>
-        <button type="button" id="somar" type onclick="somar()">+</button>
-        <button type="button" id="subtrair" type onclick="subtrair()">-</button>
-    </div>
-    <div>
-        <button type="button" id="dividir" type onclick="dividir()">/</button>
-        <button type="button" id="Multiplicar" type onclick="multiplicar()">*</button> 
-    </div>
+        <div>
+            <button type="button" id="somar" type onclick="somar()">+</button>
+            <button type="button" id="subtrair" type onclick="subtrair()">-</button>
+            <button type="button" id="dividir" type onclick="dividir()">/</button>
+            <button type="button" id="Multiplicar" type onclick="multiplicar()">*</button> 
+            <button type="button" id="porcentagem" type onclick="porcentagem()">%</button> 
+            <button type="button" id="limpar" type onclick="limpar()">C</button> 
+        </div>
+       
     <input type="text" id="resp" readonly> <!-- Readonly == fazer com que não possa digitar-->
-    
-</form>
-    <script>
-        function somar(){
-            var num1, num2, resp; //não é obrigado a declarar variaveis
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-
-            resp = num1 + num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function subtrair(){
-            var num1, num2, resp; //não é obrigado a declarar variaveis
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-
-            resp = num1 - num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function dividir(){
-            var num1, num2, resp; //não é obrigado a declarar variaveis
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-
-            resp = num1 / num2;
-
-            document.getElementById("resp").value = resp;
-        }
-        function multiplicar(){
-
-            var num1, num2, resp; //não é obrigado a declarar variaveis
-
-            num1 = parseFloat(document.getElementById("num1").value);
-            num2 = parseFloat(document.getElementById("num2").value);
-
-            resp = num1 * num2;
-
-            document.getElementById("resp").value = resp;
-        }
-    </script>
-
 
 </body>
 </html>

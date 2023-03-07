@@ -1,14 +1,14 @@
 h1{
-    color: rgb(171, 241, 78);
+    color: rgb(255, 94, 0);
     text-align: center;
-    background-color: cadetblue;
 }
 
 button{
-    color: red;
+    color: #000000;
+    background-color: #23bd1d;
     text-align: center;
-    height: auto;
-    width: auto;
+    height: 10%;
+    width: 40px;
 }
 body{
     text-align: center;
@@ -17,4 +17,8 @@ body{
 div{
     border-left-color: blue;
     height: 100%;
+}
+input{
+    width: 100px;
+    padding: 5px;
 }
