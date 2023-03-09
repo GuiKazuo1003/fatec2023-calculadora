@@ -5,7 +5,7 @@ function somar(){//não é obrigado a declarar variaveis
 
     resp = num1 + num2;
 
-    document.getElementById("resp").value = resp;
+    document.getElementById("resp").value = num1 + " + " + num2 + " = " +   resp;
 }
 function subtrair(){//não é obrigado a declarar variaveis
 
@@ -14,7 +14,7 @@ function subtrair(){//não é obrigado a declarar variaveis
 
     resp = num1 - num2;
 
-    document.getElementById("resp").value = resp;
+    document.getElementById("resp").value = num1 + " - " + num2 + " = " +   resp;
 }
 function dividir(){//não é obrigado a declarar variaveis
 
@@ -23,7 +23,7 @@ function dividir(){//não é obrigado a declarar variaveis
 
     resp = num1 / num2;
 
-    document.getElementById("resp").value = resp;
+    document.getElementById("resp").value = num1 + " / " + num2 + " = " +   resp;
 }
 function multiplicar(){//não é obrigado a declarar variaveis
 
@@ -32,7 +32,7 @@ function multiplicar(){//não é obrigado a declarar variaveis
 
     resp = num1 * num2;
 
-    document.getElementById("resp").value = resp;
+    document.getElementById("resp").value = num1 + " * " + num2 + " = " +   resp;
 }
 function porcentagem(){//não é obrigado a declarar variaveis
 
@@ -42,7 +42,7 @@ function porcentagem(){//não é obrigado a declarar variaveis
     //Realizando os calculos
     resp = num1 * num2 /100;
 
-    document.getElementById("resp").value = resp;
+    document.getElementById("resp").value = num1 + " % " + num2 + " = " +   resp;
 
 }
 function limpar(){//não é obrigado a declarar variaveis
